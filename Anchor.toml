@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+cpi_test = "53vvFBtavFcH4RmsTfMrxDTom9t6mWwdw9gLppFNJChC"
+puppet = "2ugA7VFzmbfQHsahzzLhQqLkDxmmV1qVrRc4L2U2uDp2"
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/kyberliem/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
